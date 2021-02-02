@@ -14,5 +14,12 @@ class Newsletter(Base):
     email = Column(String)
     birth_date = Column(Date)
     user_type = Column(String)
-    # other = Column(String)  # TODO: to change but don't know the field name
+    category = Column(String)
     message = Column(Text)
+
+
+class MailingList(Base):
+    __tablename__ = "lnd_newsletter"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, index=True, default=uuid4)
+    email = Column(String)

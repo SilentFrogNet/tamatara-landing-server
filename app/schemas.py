@@ -14,6 +14,7 @@ class NewsletterBase(BaseModel):
     email: str
     birth_date: date
     user_type: str
+    category: str
     message: str
 
 
