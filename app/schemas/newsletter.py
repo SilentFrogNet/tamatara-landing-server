@@ -4,10 +4,6 @@ from datetime import date
 from pydantic import BaseModel, UUID4
 
 
-class HTTPError(BaseModel):
-    message: str
-
-
 class NewsletterBase(BaseModel):
     first_name: str
     last_name: str
@@ -16,6 +12,7 @@ class NewsletterBase(BaseModel):
     user_type: str
     category: str
     message: str
+    enabled: bool
 
 
 # Properties to receive via API on creation
