@@ -8,6 +8,8 @@ from starlette.status import HTTP_201_CREATED, HTTP_404_NOT_FOUND
 from . import actions, models, schemas
 from .db import SessionLocal, engine
 
+from .mailer import Mailer
+
 # Create all tables in the database.
 # Comment this out if you using migrations.
 models.Base.metadata.create_all(bind=engine)
@@ -22,6 +24,8 @@ app.add_middleware(
     allow_methods=['GET', 'POST'],
     allow_headers=["*"],
 )
+
+mailer = Mailer()
 
 # Dependency to get DB session.
 def get_db():
@@ -59,6 +63,7 @@ def create_newsletter(
     *, db: Session = Depends(get_db), newsletter_in: schemas.NewsletterCreate
 ) -> Any:
     newsletter = actions.newsletter.create(db=db, obj_in=newsletter_in)
+    mailer.simple_send(newsletter.email)
     return newsletter
 
 
