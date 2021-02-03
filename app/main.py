@@ -63,7 +63,7 @@ def create_newsletter(
     *, db: Session = Depends(get_db), newsletter_in: schemas.NewsletterCreate
 ) -> Any:
     newsletter = actions.newsletter.create(db=db, obj_in=newsletter_in)
-    mailer.simple_send(newsletter.email)
+    mailer.send(newsletter.email)
     return newsletter
 
 
@@ -144,6 +144,7 @@ def create_mailing_list(
     *, db: Session = Depends(get_db), mailing_list_in: schemas.MailingListCreate
 ) -> Any:
     mailing_list = actions.mailing_list.create(db=db, obj_in=mailing_list_in)
+    mailer.send(mailing_list.email)
     return mailing_list
 
 
