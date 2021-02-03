@@ -8,11 +8,9 @@ class NewsletterBase(BaseModel):
     first_name: str
     last_name: str
     email: str
-    birth_date: date
+    number: str
     user_type: str
     category: str
-    message: str
-    enabled: bool
 
 
 # Properties to receive via API on creation
@@ -27,6 +25,7 @@ class NewsletterUpdate(NewsletterBase):
 
 class NewsletterInDBBase(NewsletterBase):
     id: Optional[int] = None
+    enabled: Optional[bool] = True
 
     class Config:
         orm_mode = True
