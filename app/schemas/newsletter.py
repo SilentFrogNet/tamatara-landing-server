@@ -1,7 +1,7 @@
 from typing import Optional
 from datetime import date
 
-from pydantic import BaseModel, UUID4
+from pydantic import BaseModel
 
 
 class NewsletterBase(BaseModel):
@@ -26,7 +26,7 @@ class NewsletterUpdate(NewsletterBase):
 
 
 class NewsletterInDBBase(NewsletterBase):
-    id: Optional[UUID4] = None
+    id: Optional[int] = None
 
     class Config:
         orm_mode = True

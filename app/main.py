@@ -1,7 +1,7 @@
 from typing import Any, List
 
 from fastapi import Depends, FastAPI, HTTPException
-from pydantic import UUID4
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from starlette.status import HTTP_201_CREATED, HTTP_404_NOT_FOUND
 
@@ -14,6 +14,14 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+origins = ['*']
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=['GET', 'POST'],
+    allow_headers=["*"],
+)
 
 # Dependency to get DB session.
 def get_db():
@@ -61,7 +69,7 @@ def create_newsletter(
 #     tags=["newsletters"],
 # )
 # def update_newsletter(
-#     *, db: Session = Depends(get_db), id: UUID4, newsletter_in: schemas.NewsletterUpdate,
+#     *, db: Session = Depends(get_db), id: int, newsletter_in: schemas.NewsletterUpdate,
 # ) -> Any:
 #     newsletter = actions.newsletter.get(db=db, id=id)
 #     if not newsletter:
@@ -76,7 +84,7 @@ def create_newsletter(
     responses={HTTP_404_NOT_FOUND: {"model": schemas.HTTPError}},
     tags=["newsletters"],
 )
-def get_newsletter(*, db: Session = Depends(get_db), id: UUID4) -> Any:
+def get_newsletter(*, db: Session = Depends(get_db), id: int) -> Any:
     newsletter = actions.newsletter.get(db=db, id=id)
     if not newsletter:
         raise HTTPException(
@@ -91,7 +99,7 @@ def get_newsletter(*, db: Session = Depends(get_db), id: UUID4) -> Any:
 #     responses={HTTP_404_NOT_FOUND: {"model": schemas.HTTPError}},
 #     tags=["newsletters"],
 # )
-# def delete_newsletter(*, db: Session = Depends(get_db), id: UUID4) -> Any:
+# def delete_newsletter(*, db: Session = Depends(get_db), id: int) -> Any:
 #     newsletter = actions.newsletter.get(db=db, id=id)
 #     if not newsletter:
 #         raise HTTPException(status_code=HTTP_404_NOT_FOUND, detail="Newsletter not found")
@@ -105,7 +113,7 @@ def get_newsletter(*, db: Session = Depends(get_db), id: UUID4) -> Any:
     responses={HTTP_404_NOT_FOUND: {"model": schemas.HTTPError}},
     tags=["newsletters"],
 )
-def optout_newsletter(*, db: Session = Depends(get_db), id: UUID4) -> Any:
+def optout_newsletter(*, db: Session = Depends(get_db), id: int) -> Any:
     return actions.newsletter.optout(db=db, id=id)
 
 
@@ -113,7 +121,7 @@ def optout_newsletter(*, db: Session = Depends(get_db), id: UUID4) -> Any:
 #       MAILING LIST                #
 # --------------------------------- #
 
-@app.get("/mailing_lists", response_model=List[schemas.MailingList], tags=["mailing_lists"])
+@app.get("/mailing_list", response_model=List[schemas.MailingList], tags=["mailing_list"])
 def list_mailing_lists(
     db: Session = Depends(get_db), skip: int = 0, limit: int = 100
 ) -> Any:
@@ -122,10 +130,10 @@ def list_mailing_lists(
 
 
 @app.post(
-    "/mailing_lists",
+    "/mailing_list",
     response_model=schemas.MailingList,
     status_code=HTTP_201_CREATED,
-    tags=["mailing_lists"],
+    tags=["mailing_list"],
 )
 def create_mailing_list(
     *, db: Session = Depends(get_db), mailing_list_in: schemas.MailingListCreate
@@ -138,10 +146,10 @@ def create_mailing_list(
 #     "/mailing_list/{id}",
 #     response_model=schemas.MailingList,
 #     responses={HTTP_404_NOT_FOUND: {"model": schemas.HTTPError}},
-#     tags=["mailing_lists"],
+#     tags=["mailing_list"],
 # )
 # def update_mailing_list(
-#     *, db: Session = Depends(get_db), id: UUID4, mailing_list_in: schemas.MailingListUpdate,
+#     *, db: Session = Depends(get_db), id: int, mailing_list_in: schemas.MailingListUpdate,
 # ) -> Any:
 #     mailing_list = actions.mailing_list.get(db=db, id=id)
 #     if not mailing_list:
@@ -151,12 +159,12 @@ def create_mailing_list(
 
 
 @app.get(
-    "/mailing_lists/{id}",
+    "/mailing_list/{id}",
     response_model=schemas.MailingList,
     responses={HTTP_404_NOT_FOUND: {"model": schemas.HTTPError}},
-    tags=["mailing_lists"],
+    tags=["mailing_list"],
 )
-def get_mailing_list(*, db: Session = Depends(get_db), id: UUID4) -> Any:
+def get_mailing_list(*, db: Session = Depends(get_db), id: int) -> Any:
     mailing_list = actions.mailing_list.get(db=db, id=id)
     if not mailing_list:
         raise HTTPException(
@@ -169,9 +177,9 @@ def get_mailing_list(*, db: Session = Depends(get_db), id: UUID4) -> Any:
 #     "/mailing_list/{id}",
 #     response_model=schemas.MailingList,
 #     responses={HTTP_404_NOT_FOUND: {"model": schemas.HTTPError}},
-#     tags=["mailing_lists"],
+#     tags=["mailing_list"],
 # )
-# def delete_mailing_list(*, db: Session = Depends(get_db), id: UUID4) -> Any:
+# def delete_mailing_list(*, db: Session = Depends(get_db), id: int) -> Any:
 #     mailing_list = actions.mailing_list.get(db=db, id=id)
 #     if not mailing_list:
 #         raise HTTPException(status_code=HTTP_404_NOT_FOUND, detail="MailingList not found")
@@ -180,10 +188,10 @@ def get_mailing_list(*, db: Session = Depends(get_db), id: UUID4) -> Any:
 
 
 @app.put(
-    "/mailing_lists/{id}/optoup",
+    "/mailing_list/{id}/optoup",
     response_model=schemas.MailingList,
     responses={HTTP_404_NOT_FOUND: {"model": schemas.HTTPError}},
-    tags=["mailing_lists"],
+    tags=["mailing_list"],
 )
-def optout_mailing_list(*, db: Session = Depends(get_db), id: UUID4) -> Any:
+def optout_mailing_list(*, db: Session = Depends(get_db), id: int) -> Any:
     return actions.mailing_list.optout(db=db, id=id)

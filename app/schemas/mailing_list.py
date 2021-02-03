@@ -1,12 +1,11 @@
 from typing import Optional
 from datetime import date
 
-from pydantic import BaseModel, UUID4
+from pydantic import BaseModel
 
 
 class MailingListBase(BaseModel):
     email: str
-    enabled: Optional[bool] = True
 
 
 # Properties to receive via API on creation
@@ -20,7 +19,8 @@ class MailingListUpdate(MailingListBase):
 
 
 class MailingListInDBBase(MailingListBase):
-    id: Optional[UUID4] = None
+    id: Optional[int] = None
+    enabled: Optional[bool] = True
 
     class Config:
         orm_mode = True
