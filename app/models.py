@@ -10,7 +10,7 @@ class Newsletter(Base):
     id = Column(Integer, primary_key=True, index=True)
     first_name = Column(String)
     last_name = Column(String)
-    email = Column(String)
+    email = Column(String, unique=True)
     number = Column(String)
     user_type = Column(String)
     category = Column(String)
@@ -21,5 +21,5 @@ class MailingList(Base):
     __tablename__ = "lnd_mailing_list"
 
     id = Column(Integer, primary_key=True, index=True)
-    email = Column(String)
+    email = Column(String, unique=True)
     enabled = Column(Boolean, default=True)
