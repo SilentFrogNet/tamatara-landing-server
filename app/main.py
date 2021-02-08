@@ -8,12 +8,13 @@ from starlette.status import HTTP_201_CREATED, HTTP_404_NOT_FOUND
 from app import actions, models, schemas
 from app.db import SessionLocal, engine
 from app.mailer import Mailer
+from app.languages import get_language
 
 # Create all tables in the database.
 # Comment this out if you using migrations.
 # models.Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+app = FastAPI(title="Tamatara Backend")
 
 origins = ['*']
 app.add_middleware(
@@ -38,6 +39,15 @@ def get_db():
 @app.get("/")
 def index():
     return {"message": "Tamatara Landing Backend"}
+
+
+# --------------------------------- #
+#       LANGUAGES                   #
+# --------------------------------- #
+
+@app.get("/languages/{lang}", tags=["languages"])
+def get_languages(lang: str) -> Any:
+    return get_language(lang)
 
 
 # --------------------------------- #
