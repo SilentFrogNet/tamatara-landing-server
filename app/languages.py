@@ -8,6 +8,8 @@ data = {
         "generic_keep_in_touch_title": "Keep in touch",
         "generic_keep_in_touch_email_placeholder": "Your Email",
         "generic_keep_in_touch_btn_send": "SEND",
+
+        "maker_btn1": "I want more",
     },
     "it": {
         "menu_home": "Home",
@@ -46,7 +48,7 @@ data = {
 
         "maker_title1": "Sei un maker e/o un designer?",
         "maker_label1": "Potresti essere tra i primi ad usufruire dei vantaggi di Tamatara",
-        "maker_btn1": "ISCRIVITI",
+        "maker_btn1": "Voglio saperne di più",
         "maker_title2": "La tua stampante 3D, le tue abilità artigiane, il nostro aiuto, niente di più",
         "maker_label2": "Offriamo una piattaforma innovativa in grado di proporti a clienti secondo le tue abilità artigiane",
         "maker_maker_title1": "Lavora con noi",
@@ -55,9 +57,9 @@ data = {
         "maker_maker_label2": "Grazie alle tue stampanti 3D realizzerai oggetti per i nostri clienti",
         "maker_maker_title3": "Tecniche artigiane",
         "maker_maker_label3": "Crediamo nelle tue abilità e nel valore della post-produzione",
-        "maker_title3": "Avrai a disposizione tutto quello che ti serve per soddisfare i nostri clienti",
+        "maker_title3": "Avrai a disposizione tutto quello che ti serve per soddisfare i tuoi clienti",
         "maker_label3-1": "Semplifichiamo il tuo lavoro fornendoti il modello 3D già pronto per la stampa, con dettagli specifici e guide per eventuali lavori di post-produzione. Tu mettici le tue abilità, noi ti portiamo i clienti",
-        "maker_label3-2": "La nostra vision è rendere accessibile e semplice l'artigianato digitale. Tamatara nasce come eCommerce per clienti amanti di oggetti artgianali e su misura. Crediamo fortemente che la community di makers italiani sia pronta ad entrare con profitto nel mercato di consumo, supportata da servizi innovativi e formazione su misura",
+        "maker_label3-2": "La nostra vision è rendere accessibile e semplice l'artigianato digitale. Tamatara nasce come eCommerce per clienti amanti di oggetti artigianali e su misura. Crediamo fortemente che la community di makers italiani sia pronta ad entrare con profitto nel mercato di consumo, supportata da servizi innovativi e formazione su misura",
         "maker_title4": "Designer, sei pronto a guadagnare dalle tue idee?",
         "maker_label4": "I tuoi modelli 3D comporranno il nostro catalogo, i clienti vedranno un oggetto finito con la possibilità di comprarlo come tu lo hai immaginato",
         "maker_designer_title1": "Proponi le tue creazioni",
@@ -66,10 +68,10 @@ data = {
         "maker_designer_label2": "Proteggiamo i tuoi file con firma digitale e contratti specifici",
         "maker_designer_title3": "Esplora il potenziale",
         "maker_designer_label3": "Lasciati guidare dai nostri servizi gratuiti per diffondere la tua idea",
-        "maker_title5": "Il nostro marketplace è pensato per rendere la tua idea riproducibile in sicurezza",
+        "maker_title5": "Tamatara è pensata per rendere la tua idea riproducibile in sicurezza",
         "maker_label5-1": "Saremo la tua vetrina agli occhi del mondo, proteggendo le tue idee e garantendoti che solo i migliori makers avranno accesso ai tuoi modelli 3D per soddisfare i clienti. Un singolo upload, una vetrina infinita e gratuita",
         "maker_label5-2": "Grazie a software specifici e contratti stipulati al momento dell'ordine ci impegnamo a garantire il massimo riserbo per i tuoi modelli 3D. Solo il maker incaricato dal cliente per stampare la tua idea avrà accesso esclusivo al file. Ti basterà caricarlo, inserire le informazioni utili per riprodurlo come tu lo hai pensato e impostare un prezzo per il singolo uso commerciale",
-        "maker_title6": "Abbiamo posizioni aperte per il lancio della piattaforma, restiamo in contatto",
+        "maker_title6": "Restiamo in contatto",
         "maker_label6": "A breve lanceremo la beta-test e ci piacerebbe averti a bordo per poterti mostrare in anteprima le potenzialità di Tamatara",
         "maker_form_firstname": "Nome",
         "maker_form_lastname": "Cognome",
@@ -92,7 +94,7 @@ data = {
 
         "client_title1": "Prodotti unici ideati da designers internazionali creati al momento del tuo ordine da artigiani italiani",
         "client_label1": "L'unico negozio online semplice, divertente ed economico in grado di offrirti l'unicità dell'artigianato insieme alle potenzialità della stampa 3D",
-        "client_title2": "Immagina le potenzialità della creatività unite alla tecnica e all'ecosostenibilità. In tre click",
+        "client_title2": "Immagina le potenzialità della creatività unite alla tecnica e all'ecosostenibilità",
         "client_label2": "Acquistare un oggetto unico sfuttando le abilità degli artigiani digitali italiani non è mai stato cosi semplice",
         "client_block_title1": "Creato per te",
         "client_block_label1": "Ogni oggetto che sceglierai verrà creato al momento grazie alla stampante 3D ed a tecniche artigiane manuali. E si, potrai personalizzarlo",
@@ -125,6 +127,9 @@ data = {
         "team_fabio_cit": "“Non si può descrivere la passione, la si può solo vivere”",
         "team_ilario_desc": "Laureato in informatica e con una grande passione per tutto ciò che è tecnologia e innovazione, attraverso gli anni vissuti in aziende  IT, insegue e promuove a 360 gradi le nuove tecnologie e i sistemi di ultima generazione.",
         "team_ilario_cit": "“Nel momento in cui dubiti di poter volare, perdi per sempre la facoltà di farlo”"
+    },
+    "fr": {
+        "maker_btn1": "banana",
     }
 }
 DEFAULT_LANGUAGE = "it"     # TODO: change to en?
