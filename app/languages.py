@@ -1,15 +1,5 @@
 data = {
     "en": {
-        "menu_home": "Home",
-        "menu_maker_designer": "Maker and designer",
-        "menu_ecommerce": "eCommerce",
-        "menu_about_us": "Who we are",
-
-        "generic_keep_in_touch_title": "Keep in touch",
-        "generic_keep_in_touch_email_placeholder": "Your Email",
-        "generic_keep_in_touch_btn_send": "SEND",
-
-        "maker_btn1": "I want more",
     },
     "it": {
         "menu_home": "Home",
@@ -129,7 +119,6 @@ data = {
         "team_ilario_cit": "“Nel momento in cui dubiti di poter volare, perdi per sempre la facoltà di farlo”"
     },
     "fr": {
-        "maker_btn1": "banana",
     }
 }
 DEFAULT_LANGUAGE = "it"     # TODO: change to en?
