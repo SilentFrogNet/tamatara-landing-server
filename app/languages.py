@@ -1,6 +1,4 @@
 data = {
-    "en": {
-    },
     "it": {
         "menu_home": "Home",
         "menu_maker_designer": "Maker e designer",
@@ -117,8 +115,6 @@ data = {
         "team_fabio_cit": "“Non si può descrivere la passione, la si può solo vivere”",
         "team_ilario_desc": "Laureato in informatica e con una grande passione per tutto ciò che è tecnologia e innovazione, attraverso gli anni vissuti in aziende  IT, insegue e promuove a 360 gradi le nuove tecnologie e i sistemi di ultima generazione.",
         "team_ilario_cit": "“Nel momento in cui dubiti di poter volare, perdi per sempre la facoltà di farlo”"
-    },
-    "fr": {
     }
 }
 DEFAULT_LANGUAGE = "it"     # TODO: change to en?
