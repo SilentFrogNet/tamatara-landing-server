@@ -64,7 +64,7 @@ data = {
         "maker_label6": "A breve lanceremo la beta-test e ci piacerebbe averti a bordo per poterti mostrare in anteprima le potenzialità di Tamatara",
         "maker_form_firstname": "Nome <sup>*</sup>",
         "maker_form_lastname": "Cognome <sup>*</sup>",
-        "email": "Email <sup>*</sup>",
+        "maker_form_email": "Email <sup>*</sup>",
         "maker_form_phone": "Numero di telefono",
         "maker_form_ima": "Sono un <sup>*</sup>",
         "maker_form_ima_maker": "Maker",
