@@ -121,4 +121,5 @@ DEFAULT_LANGUAGE = "it"     # TODO: change to en?
 
 
 def get_language(lang):
-    return data.get(lang, data[DEFAULT_LANGUAGE])
+    return data['it']
+    # return data.get(lang, data[DEFAULT_LANGUAGE])
