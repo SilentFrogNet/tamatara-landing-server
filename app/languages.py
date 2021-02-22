@@ -317,7 +317,7 @@ data = {
         "client_block_label3": "Nous facilitons le contact entre la créativité, la technologie et les biens de consommation. Acheter des objets innovants n'a jamais été aussi facile",
         "client_title3": "Nous pensons que la réalisation de chaque article est la valeur ajoutée d'un achat",
         "client_title3-1": "Finis les objets produits en série, nous valorisons chaque gramme de matériau utilisé pour répondre à vos besoins, en aidant votre territoire et la nature",
-        "client_title3-2": "À Tamatara, vous trouverez un vaste catalogue d'objets de design, de gadgets, de modélisme, de jouets et de bijoux. Tout ce qui est concevable est réalisable grâce à la créativité des designers et au savoir-faire artisanal et technique des makers. Chaque achat aidera les artisans numériques italiens à relancer les objets "made in Italy".",
+        "client_title3-2": "À Tamatara, vous trouverez un vaste catalogue d'objets de design, de gadgets, de modélisme, de jouets et de bijoux. Tout ce qui est concevable est réalisable grâce à la créativité des designers et au savoir-faire artisanal et technique des makers. Chaque achat aidera les artisans numériques italiens à relancer les objets \"made in Italy\".",
         "team_title1": "Qui sommes-nous?",
         "team_label1": "Tamatara est née pour donner du travail et de la visibilité aux  artisans digital. Nos compétences se croisent au mieux pour poursuivre cette vision",
         "team_title2": "Découvrez notre vision",
