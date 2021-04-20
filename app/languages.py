@@ -33,7 +33,7 @@ data = {
         "index_client": "Cliente",
         "index_lbl_client": "Uniamo artigianalità, tecnologia e design per creare oggetti unici al momento del tuo acquisto",
         "index_title5": "I migliori artigiani digitali italiani",
-        "index_label5": "Per creare con cura ogni oggetto servono i migliori: la nostra rete di artigiani digitali, makers e designers, saranno in grado di realizzare tutto ciò che è pensabile. La rete è in continua espansione, se vuoi <b>lavorare</b> con le tue abilità di <b>stampa 3D</b> e di <b>design</b> sei nel posto giusto",
+        "index_label5": "Per creare con cura ogni oggetto servono i migliori: la nostra rete di artigiani digitali, makers e designers, sarà in grado di realizzare tutto ciò che è pensabile. La rete è in continua espansione, se vuoi <b>lavorare</b> con le tue abilità di <b>stampa 3D</b> e di <b>design</b> sei nel posto giusto",
         "index_btn2": "Espandi il tuo business",
         "index_title6": "Molto più di un eCommerce",
         "index_title7": "Parlano di noi",
