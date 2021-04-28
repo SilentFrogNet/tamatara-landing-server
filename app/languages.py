@@ -15,6 +15,7 @@ data = {
         "generic_keep_in_touch_msg": "Grazie per esserti registrato",
         "generic_keep_in_touch_error_msg": "Email è un campo obbligatorio",
         "generic_keep_in_touch_disclaimer": "Il tuo indirizzo di messaggistica è usato solamente per inviarti le nostre lettere informative e le informazioni relative alle attività di Tamatara S.r.l.. Puoi usare il link di disiscrizione integrato nella newsletter in qualsiasi momento.",
+        "thanks_title": "Bandi e collaborazioni",
 
         "index_title1": "Diamo valore ad ogni oggetto,<br> creato su misura per te",
         "index_label1": "Semplifichiamo l'acquisto e la vendita di oggetti artigianali, di design ed ecosostenibili",
@@ -126,6 +127,7 @@ data = {
         "menu_maker_designer": "Maker and Designer",
         "menu_ecommerce": "eCommerce",
         "menu_about_us": "About us",
+
         "generic_keep_in_touch_title": "Let's stay connected",
         "generic_keep_in_touch_label": "As soon as we will be online, we will contact you just to offer you discounts and advances to return your trust",
         "generic_keep_in_touch_email_placeholder": "Your Email address",
@@ -133,6 +135,8 @@ data = {
         "generic_keep_in_touch_msg": "Thank you for registering",
         "generic_keep_in_touch_error_msg": "Email is a mandatory field",
         "generic_keep_in_touch_disclaimer": "Your email address is only used to send you information about Tamatara S.r.l. activities. You can use the unsubscribe link embedded in the newsletter at any time.",
+        "thanks_title": "Calls and collaborations",
+
         "index_title1": "We provide value to every item,<br> tailor-made for you.",
         "index_label1": "We make it easier to buy and sell design and eco-friendly handcrafted items.",
         "index_title2": "Handcrafts, innovation, made in Italy",
@@ -154,6 +158,7 @@ data = {
         "index_btn2": "Boost your business",
         "index_title6": "More than an eCommerce",
         "index_title7": "What people are saying about us",
+
         "maker_title1": "Are you a maker and/or designer?",
         "maker_label1": "You could be one of the first to enjoy the many opportunities offered by Tamatara.",
         "maker_btn1": "I want to know more",
@@ -200,6 +205,7 @@ data = {
         "maker_form_category_cosplay": "Miniatures and Cosplay",
         "maker_form_category_other": "Other",
         "maker_form_error_msg": "Mandatory fields are missing",
+
         "client_title1": "Unique items from international designers created by Italian craftsmen at the time of your order",
         "client_label1": "The only simple, fun and affordable online store that offers the uniqueness of craftsmanship with the power of 3D printing.",
         "client_title2": "Imagine the creative potential combined with technology and eco-sustainability.",
@@ -213,6 +219,7 @@ data = {
         "client_title3": "We believe that the creation of each item is the extra value of a purchase",
         "client_label3-1": "No more mass-produced items, we enhance every single gram of material used to meet your needs, helping your country and the nature",
         "client_label3-2": "In Tamatara you will find a vast catalog of design items, gadgets, models, toys, jewelry. Everything that is conceivable is achievable thanks to the creativity of designers and the craftsmanship and technical skills of the makers. Each purchase will help the Italian digital craftsmen to boost the item made in Italy.",
+        
         "team_title1": "About us",
         "team_label1": "Tamatara was founded to provide business and visibility to digital craftsmen. Our skills cross the best to follow this vision",
         "team_title2": "Our vision",
@@ -231,6 +238,7 @@ data = {
         "menu_maker_designer": "Maker et designer",
         "menu_ecommerce": "eCommerce",
         "menu_about_us": "Qui sommes-nous?",
+
         "generic_keep_in_touch_title": "On reste connecté",
         "generic_keep_in_touch_label": "Nous serons bientôt en ligne, nous vous contacterons pour vous offrir des rabais et des promotions pour le renouvellement de votre confiance",
         "generic_keep_in_touch_email_placeholder": "Votre email",
@@ -238,6 +246,8 @@ data = {
         "generic_keep_in_touch_msg": "Merci de votre inscription",
         "generic_keep_in_touch_error_msg": "L'email est un champ obligatoire",
         "generic_keep_in_touch_disclaimer": "Votre adresse de messagerie n'est utilisée que pour vous envoyer nos lettres d'information et des informations sur les activités de Tamatara S.r.l. Vous pouvez utiliser le lien de désabonnement intégré dans la lettre d'information à tout moment.",
+        "thanks_title": "Appels et collaborations",
+
         "index_title1": "Nous donnons de la valeur à chaque objet,<br> réalisé sur mesure pour vous. ",
         "index_label1": "Nous facilitons l'achat et la vente d'objets artisanaux, riches en design et écologiques.",
         "index_title2": "Artisanat, innovation, made in Italy",
@@ -259,6 +269,7 @@ data = {
         "index_btn2": "Développez vos activités",
         "index_title6": "Bien plus qu’un eCommerce",
         "index_title7": "On parle de nous",
+        
         "maker_title1": "Vous êtes maker et/ou designer ?",
         "maker_label1": "Vous pourriez être l'un des premiers à profiter des avantages de Tamatara.",
         "maker_btn1": "J’aimerais en savoir plus",
@@ -305,6 +316,7 @@ data = {
         "maker_form_category_cosplay": "Miniatures et cosplay",
         "maker_form_category_other": "Autre",
         "maker_form_error_msg": "Remplissez les champs obligatoires",
+        
         "client_title1": "Des produits uniques créés par des designers internationaux et réalisés au moment de votre commande par des artisans italiens",
         "client_label1": "Le seul magasin en ligne simple, amusant et abordable qui vous offre le caractère unique de l'artisanat combiné à la puissance de l'impression 3D.",
         "client_title2": "Imaginez le potentiel de créativité combiné à la technologie et à l'éco-durabilité.",
@@ -318,6 +330,7 @@ data = {
         "client_title3": "Nous pensons que la réalisation de chaque article est la valeur ajoutée d'un achat",
         "client_label3-1": "Finis les objets produits en série, nous valorisons chaque gramme de matériau utilisé pour répondre à vos besoins, en aidant votre territoire et la nature",
         "client_label3-2": "À Tamatara, vous trouverez un vaste catalogue d'objets de design, de gadgets, de modélisme, de jouets et de bijoux. Tout ce qui est concevable est réalisable grâce à la créativité des designers et au savoir-faire artisanal et technique des makers. Chaque achat aidera les artisans numériques italiens à relancer les objets \"made in Italy\".",
+        
         "team_title1": "Qui sommes-nous?",
         "team_label1": "Tamatara est née pour donner du travail et de la visibilité aux  artisans digital. Nos compétences se croisent au mieux pour poursuivre cette vision",
         "team_title2": "Découvrez notre vision",
