@@ -40,7 +40,7 @@ data = {
         "index_title7": "Parlano di noi",
 
         "maker_title1": "Sei un maker e/o un designer?",
-        "maker_label1": "Siamo il primo marketplace italiano specializzato in artigianato digitale",
+        "maker_label1": "Potresti essere tra i primi ad usufruire dei vantaggi di Tamatara",
         "maker_btn1": "Voglio saperne di più",
         "maker_title2": "La tua stampante 3D, le tue abilità artigiane, il nostro aiuto, niente di più",
         "maker_label2": "Offriamo una piattaforma innovativa in grado di proporti a clienti secondo le tue abilità artigiane.",
@@ -140,7 +140,7 @@ data = {
         "index_title1": "We provide value to every item,<br> tailor-made for you.",
         "index_label1": "We make it easier to buy and sell design and eco-friendly handcrafted items.",
         "index_title2": "Handcrafts, innovation, made in Italy",
-        "index_label2": "The best online store where the ideas of international designers find a way to be realized thanks to the craft skills of the best Italian makers",
+        "index_label2": "We are the place where the ideas of international designers find a way to be realized thanks to the craft skills of the best Italian makers",
         "index_btn1": "I want to know more",
         "index_title3": "Our mission",
         "index_label3-1": "Connect people looking for unique and high quality products with the best makers of Made in Italy, at a fair price, thus promoting the development of the handcrafted 4.0",
