@@ -47,7 +47,7 @@ data = {
         "maker_maker_title1": "Lavora con noi",
         "maker_maker_label1": "Approfitta dei nostri servizi gratuiti per espandere il tuo business.",
         "maker_maker_title2": "Stampa in 3D",
-        "maker_maker_label2": "Sfrutta le tue stampanti 3D e realizza oggetti per i nostri clienti.",
+        "maker_maker_label2": "Sfrutta le tue stampanti 3D e realizza oggetti per i tuoi clienti.",
         "maker_maker_title3": "Tecniche artigiane",
         "maker_maker_label3": "Crediamo nelle tue abilità e nel valore della post-produzione.",
         "maker_title3": "Avrai a disposizione tutto quello che ti serve per soddisfare i tuoi clienti",
